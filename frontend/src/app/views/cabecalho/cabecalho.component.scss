@@ -1,0 +1,19 @@
+.header {
+	width: 100%;
+	min-height: 120px;
+	background-color: #ffc500;
+	box-sizing: border-box;
+}
+.logo {
+	max-width: 20%;
+	height: 100%;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	text-align: center;
+	padding: 1%;
+	
+}
