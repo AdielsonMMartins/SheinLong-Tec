@@ -1,1 +1,10 @@
-<p>botao-nav works!</p>
+<!-- <div class="p-toolbar-group-end">
+	<p-button icon="pi pi-bars" label="Categorias" class="mr-2" styleClass="p-button-text"></p-button>
+	<p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+   
+</div> -->
+
+<div class="card flex justify-content-center">
+    <button #btn type="button" pButton icon="pi pi-bars" label="Categorias" (click)="menu.toggle($event)"></button>
+    <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+</div>

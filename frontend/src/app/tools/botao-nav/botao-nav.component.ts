@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-botao-nav',
@@ -7,4 +8,31 @@ import { Component } from '@angular/core';
 })
 export class BotaoNavComponent {
 
+  items!: MenuItem[];
+    
+  ngOnInit() {
+      this.items = [
+          {
+              label: 'Celulares',
+              icon: 'pi pi-fw pi-circle',
+              
+          },
+          {
+              label: 'SmartWatches',
+              icon: 'pi pi-fw pi-circle',
+              
+          },
+          {
+              label: 'Fones Bluetooth',
+              icon: 'pi pi-fw pi-circle',
+              
+          },
+          {
+              label: 'Acessórios',
+              icon: 'pi pi-fw pi-circle',
+              
+          }
+      ];
+  }
 }
+
