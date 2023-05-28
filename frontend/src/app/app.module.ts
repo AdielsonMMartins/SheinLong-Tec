@@ -8,11 +8,13 @@ import { ToolbarModule } from 'primeng/toolbar'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './views/cabecalho/cabecalho.component';
+import { BotaoNavComponent } from './tools/botao-nav/botao-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    BotaoNavComponent
   ],
   imports: [
     BrowserModule,
