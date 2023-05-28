@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { ButtonModule } from 'primeng/button';
-import { ToolbarModule } from 'primeng/toolbar'
+import { ToolbarModule } from 'primeng/toolbar';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +22,8 @@ import { BotaoNavComponent } from './tools/botao-nav/botao-nav.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     ButtonModule,
-    ToolbarModule
+    ToolbarModule,
+    TieredMenuModule
     
   ],
   providers: [],
