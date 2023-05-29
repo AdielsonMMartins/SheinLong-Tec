@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './views/cabecalho/cabecalho.component';
 import { BotaoNavComponent } from './tools/botao-nav/botao-nav.component';
+import { BotaoLoginComponent } from './tools/botao-login/botao-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    BotaoNavComponent
+    BotaoNavComponent,
+    BotaoLoginComponent
   ],
   imports: [
     BrowserModule,
