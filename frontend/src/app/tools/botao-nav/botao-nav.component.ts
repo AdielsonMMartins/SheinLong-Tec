@@ -28,7 +28,7 @@ export class BotaoNavComponent {
               
           },
           {
-              label: 'Acessórios',
+              label: 'Diversos',
               icon: 'pi pi-fw pi-circle',
               
           }
