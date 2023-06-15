@@ -18,37 +18,40 @@ export class BotaoLoginComponent implements OnInit, OnDestroy{
   show() {
     this.ref = this.dialogService.open(FormLoginComponent, {
         header: 'Entre e Aproveite!!',
-        width: '35%',
+        width: '37%',
         contentStyle: { overflow: 'auto' },
         baseZIndex: 1000,
         maximizable: false
     });
   }
 
-  ngOnDestroy() {
-    if (this.ref) {
-        this.ref.close();
-    }
-}
+  ngOnDestroy(): void {}
+    
 
-  ngOnInit() {
-      this.items = [
-          {
-              label: 'Cliente',
-              icon: 'pi pi-fw pi-circle',
-              
-          },
-          {
-              label: 'Funcionário',
-              icon: 'pi pi-fw pi-circle',
-              
-          },
-          
-      ];
+
+  ngOnInit(): void {
   }
 
 
-  constructor(public dialogService: DialogService) {}
+  constructor(public dialogService: DialogService) {
+    this.items = [
+      {
+          label: 'Cliente',
+          icon: 'pi pi-circle',
+          command: () => {
+              this.show();
+          }
+      },
+      {
+          label: 'Funcionário',
+          icon: 'pi pi-circle',
+          command: () => {
+              this.show();
+          }
+      },
+      
+  ];
+  }
 
 
 }
