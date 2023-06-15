@@ -10,6 +10,7 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { SplitButtonModule } from 'primeng/splitbutton'
 
 
 
@@ -37,6 +38,7 @@ import { FormLoginComponent } from './views/form-login/form-login.component';
     InputTextModule,
     CheckboxModule,
     RadioButtonModule,
+    SplitButtonModule,
     
   ],
   providers: [],
