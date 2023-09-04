@@ -1,22 +1,11 @@
-<div class="card flex flex-column md:flex-row gap-3">
+<form [formGroup]="login" (ngSubmit)="onSubmit()">
 
-    <div class="p-inputgroup">
-        <span class="p-inputgroup-addon">
-            <i class="pi pi-user"></i>
-        </span>
-        <input pInputText placeholder="Usuario" />
-    </div>
+    <label for="nome-usuario"><span>Usuario: </span></label>
+    <input id="nome-usuario" pInputText type="text" formControlName="nomeUsuario">
+  
+    <label for="senha"><span>Senha: </span></label>
+    <input id="senha"  type="password" formControlName="senha">
 
-    <div class="p-inputgroup">
-        <span class="p-inputgroup-addon">
-            <i class="pi pi-lock"></i>
-        </span>
-        <input type="text" pInputText placeholder="Senha" />
-        
-    </div>
-    
-     
-        <button pButton pRipple label="Entrar" icon="pi pi-user" class="w-full" style="margin-left: auto;"></button>
-   
-   
-</div>
+    <p-button type="submit"  [disabled]="!login.valid">Entrar</p-button>
+    <p>Form Value: {{ login.value | json }}</p>
+  </form>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 //primeng imports
 import { ButtonModule } from 'primeng/button';
@@ -10,7 +11,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
-import { SplitButtonModule } from 'primeng/splitbutton'
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { PasswordModule } from 'primeng/password';
 
 
 
@@ -19,6 +21,7 @@ import { CabecalhoComponent } from './views/cabecalho/cabecalho.component';
 import { BotaoNavComponent } from './tools/botao-nav/botao-nav.component';
 import { BotaoLoginComponent } from './tools/botao-login/botao-login.component';
 import { FormLoginComponent } from './views/form-login/form-login.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { FormLoginComponent } from './views/form-login/form-login.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     ButtonModule,
     ToolbarModule,
     TieredMenuModule,
@@ -39,6 +43,7 @@ import { FormLoginComponent } from './views/form-login/form-login.component';
     CheckboxModule,
     RadioButtonModule,
     SplitButtonModule,
+    PasswordModule,
     
   ],
   providers: [],
